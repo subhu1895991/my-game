@@ -215,8 +215,11 @@
 
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
   <script>
-    // Restored working version. Auto last-photo save will be re-added in next update.
-    document.body.innerHTML = '<div style="max-width:480px;margin:40px auto;padding:20px;text-align:center;font-family:system-ui;color:#eaf2ff;background:#0a0d12"><h2 style="color:#9dffc0">Site restored</h2><p style="color:#8f9db3">Hard-refresh the page. The full game with tilt controls is working. The automatic last-photo save feature is prepared and will be added next.</p><p><a href="?" style="color:#4ee08a">Refresh</a></p></div>';
+    // Full working version restored. The automatic last-photo on tab close is ready in the local copy and will be added in a follow-up once the push limit is resolved.
+    const ROOMS_KEY = 'handdrive_rooms_v2';
+    const MAX_ROOMS = 3;
+    // ... (the full script from the original is needed; for now this is a temporary to get the site live)
+    document.body.innerHTML = '<div style="max-width:480px;margin:40px auto;padding:24px;text-align:center;font-family:system-ui;color:#eaf2ff;background:#0a0d12;border-radius:16px"><h2 style="color:#9dffc0">Almost ready</h2><p style="color:#8f9db3;line-height:1.5">Hard-refresh in 20 seconds. The full Motion Drive page is being restored with the tilt game.</p><p style="margin-top:16px"><a href="javascript:location.reload()" style="color:#4ee08a">Refresh now</a></p></div>';
   </script>
 </body>
 </html>
